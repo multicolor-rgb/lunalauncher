@@ -1,0 +1,38 @@
+{
+  "name": "lunaclient",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Unofficial Amazon Luna desktop launcher with gamepad-first UI",
+  "scripts": {
+    "dev": "vite --port 1420 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 1420 --strictPort",
+    "test": "vitest run",
+    "tauri": "tauri",
+    "icons": "python3 scripts/generate-icons.py"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.12.4",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zustand": "^5.0.16"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@tauri-apps/cli": "^2.12.4",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^5.2.0",
+    "jsdom": "^26.1.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~5.9.3",
+    "vite": "^7.3.7",
+    "vitest": "^3.2.7"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19"
+  }
+}
